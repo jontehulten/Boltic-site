@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Home
+ * Template Name: History
  *
  * Template for displaying a page without sidebar even if a sidebar widget is published.
  *

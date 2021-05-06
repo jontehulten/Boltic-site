@@ -1,4 +1,5 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
 .home-bg {
     height:600px;
     background-image:url(../img/Boltic-LAIK11.jpg);
@@ -16,11 +17,33 @@
     }
 }
 
-
-
 #wrapper-footer{
-    background-color: black;
+    background-color: $dark;
     .site-info{
         color: blue;
     }
+    .site-footer {
+        
+        .footer-widgets {
+
+            display: flex;
+            justify-content: space-around;
+
+            div {
+                width: 100%;
+                text-align: left;
+                ul{
+                    padding-left: 0;
+                }
+                li {
+                list-style: none;
+                    h2{
+                        color: #fff;
+                    }
+                }
+            }
+        }           
+    }
 }
+
+

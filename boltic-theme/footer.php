@@ -15,13 +15,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<div class="sponsors-container">
-<div class="sponsor"></div>
-<div class="sponsor"></div>
-<div class="sponsor"></div>
-<div class="sponsor"></div>
-</div>
-
 <div class="wrapper" id="wrapper-footer">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
@@ -31,6 +24,23 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-md-12">
 
 				<footer class="site-footer" id="colophon">
+					
+					    <div id="footer-sidebar" class="footer-widgets">
+						  <div id="footer-one" class="widget">
+							  <?php
+								  if(is_active_sidebar('footer-one')){
+								  	dynamic_sidebar('footer-one');
+								  }
+								  ?>
+						  </div>
+						  <div id="footer-two" class="widget">
+							  <?php
+								  if(is_active_sidebar('footer-two')){
+									dynamic_sidebar('footer-two');
+								  }
+							  ?>
+						  </div>
+						</div>					
 
 					<div class="site-info">
 

@@ -42,3 +42,24 @@ if ( class_exists( 'Jetpack' ) ) {
 foreach ( $understrap_includes as $file ) {
 	require_once $understrap_inc_dir . $file;
 }
+
+// Register Footer widgets
+function footer_widgets() {
+
+	$args = array(
+		'id'            => 'footer-one',
+		'class'         => 'one',
+		'name'          => __( 'Kolumn 1', 'text_domain' ),
+	);
+	register_sidebar( $args );
+
+	$args = array(
+		'id'            => 'footer-two',
+		'class'         => 'two',
+		'name'          => __( 'Kolumn 2', 'text_domain' ),
+	);
+	register_sidebar( $args );
+
+}
+
+add_action( 'widgets_init', 'footer_widgets' );
