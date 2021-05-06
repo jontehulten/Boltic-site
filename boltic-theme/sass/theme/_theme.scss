@@ -1,0 +1,26 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+.home-bg {
+    height:600px;
+    background-image:url(../img/Boltic-LAIK11.jpg);
+    background-size: cover;
+}
+.sponsors-container{
+    height:200px;
+    background-color: $primary;
+    display: flex;
+    .sponsor{
+        background-color: lightblue;
+        flex: 1;
+        margin: 15px;
+        align-content: space-around;
+    }
+}
+
+
+
+#wrapper-footer{
+    background-color: black;
+    .site-info{
+        color: blue;
+    }
+}
